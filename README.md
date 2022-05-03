@@ -1,27 +1,28 @@
-# Angular12
+# cj-app
+Angular 12 SPA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.17.
+IMPORTANT NOTES (In case Backend Service API Integration is required):
 
-## Development server
+    1. The backend endpoint host url is mentioned in environment.ts as well as environment.prod.ts. The property name is "apiUrl". An example is mentioned in "app.component.ts".
+    2. PLEASE USE THIS PROPERTY ("apiUrl") WHEN YOU ARE TRYING TO CALL A BACKEND API. ALSO DON'T CHANGE THIS PROPERTY ELSE THE APP WILL NOT BUILD PROPERLY AND YOUR SUBMISSION WILL NOT BE SCORED. 
+    3. Make sure that all the properties mentioned in environment.ts are also mentioned in environment.prod.ts for the app to build properly.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+PROJECT BUILD STEPS (Make sure that your project is getting built successfully):
 
-## Code scaffolding
+    Pre-requisites:
+    1. Install http-server module (https://www.npmjs.com/package/http-server).
+    2. Install node, npm, angular-cli (12) for angular 12
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    Steps:
+    1. Go to the project root directory.
+    2. Run the following commands in the terminal/command line to build the app:
+            - npm install
+            - ng build --prod    
+    3. Please make sure that your project is built successfully.
+    
+CLOUD-IDE SETUP STEPS(follow the below steps in case you are using the Cloud IDE instead of your Local IDE):
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    1. Please run the below commands from the project root in a separate terminal to setup live run support in Cloud IDE:
+        - chmod 0755 ./chrome-test-setup.sh
+        - sh ./chrome-test-setup.sh
+    2. Make the port 9515 public
