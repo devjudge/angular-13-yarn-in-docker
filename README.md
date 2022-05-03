@@ -1,5 +1,5 @@
 # cj-app
-Angular 12 SPA
+Angular 13 SPA
 
 IMPORTANT NOTES (In case Backend Service API Integration is required):
 
