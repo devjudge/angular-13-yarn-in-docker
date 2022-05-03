@@ -1,5 +1,5 @@
 # cj-app
-Angular 12 SPA
+Angular 13 SPA
 
 IMPORTANT NOTES (In case Backend Service API Integration is required):
 
@@ -11,7 +11,7 @@ PROJECT BUILD STEPS (Make sure that your project is getting built successfully):
 
     Pre-requisites:
     1. Install http-server module (https://www.npmjs.com/package/http-server).
-    2. Install node, npm, angular-cli (12) for angular 12
+    2. Install node, npm, angular-cli (13) for angular 13
 
     Steps:
     1. Go to the project root directory.
